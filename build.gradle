@@ -3,6 +3,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+        //추가
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.4.RELEASE"
         classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.20.RELEASE'
     }
 }
@@ -12,6 +14,9 @@ plugins {
 }
 
 apply plugin: 'org.springframework.boot'
+
+//Spring Boot Overriding
+ext['hibernate.version'] = '5.2.11.Final' //추가 (SpringDataJpa가 사용하는 Hibernate의 버전만 5.2.11로 변경해서 사용하겠다는 의존성 변경 )
 
 group = 'com.springboot'
 version = '0.0.1-SNAPSHOT'
