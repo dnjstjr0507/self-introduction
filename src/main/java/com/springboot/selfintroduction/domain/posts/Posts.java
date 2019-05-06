@@ -11,6 +11,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+/**
+ * Created by dnjstjr0507@gmail.com on 2019. 5. 6.
+ * Github : http://github.com/dnjstjr0507
+ */
+
 @NoArgsConstructor(access = AccessLevel.PROTECTED) // 기본생성자 자동추가 // (기본생성자의 접근권한을 protected로 제한)
 @Getter
 @Entity // Table과 링크될 클래스임을 나타냄
