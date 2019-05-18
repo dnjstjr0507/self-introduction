@@ -38,13 +38,13 @@ public class PostsMainResponseDto {
 
     /**
      * Java 7 버전
-     */
+
     private String toStringDateTimeByJava7(LocalDateTime localDateTime){
         if(localDateTime == null){
             return "";
         }
-
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return formatter.format(localDateTime);
     }
+     */
 }

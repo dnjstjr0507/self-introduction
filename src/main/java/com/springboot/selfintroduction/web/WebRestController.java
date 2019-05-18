@@ -1,8 +1,11 @@
 package com.springboot.selfintroduction.web;
 
+import com.springboot.selfintroduction.dto.mail.MailSendDto;
 import com.springboot.selfintroduction.dto.posts.PostsSaveRequestDto;
+import com.springboot.selfintroduction.service.MaileServiceImpl;
 import com.springboot.selfintroduction.service.PostsService;
 import lombok.AllArgsConstructor;
+import org.springframework.mail.MailException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebRestController {
 
     private PostsService postsService;
+    private MaileServiceImpl maileService;
 
     @GetMapping("/hello")
     public String hello(){
@@ -27,5 +31,14 @@ public class WebRestController {
     @PostMapping("/posts")
     public Long savePosts(@RequestBody PostsSaveRequestDto dto){
         return postsService.save(dto);
+    }
+
+    @PostMapping("/email")
+    public void sendMail(@RequestBody MailSendDto dto){
+        try {
+            maileService.sendSimpleMessage(dto);
+        }catch (MailException mailException){
+            System.out.println(mailException);
+        }
     }
 }

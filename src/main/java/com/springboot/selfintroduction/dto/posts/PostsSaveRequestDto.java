@@ -17,12 +17,14 @@ public class PostsSaveRequestDto {
 
     private String title;
     private String content;
+    private String password;
     private String author;
 
     public Posts toEntity(){
         return Posts.builder()
                 .title(title)
                 .content(content)
+                .password(password)
                 .author(author)
                 .build();
     }

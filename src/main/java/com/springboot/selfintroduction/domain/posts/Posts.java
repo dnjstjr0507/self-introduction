@@ -31,12 +31,16 @@ public class Posts extends BaseTimeEntity {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
+    @Column(length = 200, nullable = false)
+    private String password;
+
     private String author;
 
     @Builder
-    public Posts(String title, String content, String author) {
+    public Posts(String title, String content, String password, String author) {
         this.title = title;
         this.content = content;
+        this.password = password;
         this.author = author;
     }
 }
