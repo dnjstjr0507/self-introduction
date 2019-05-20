@@ -1,7 +1,7 @@
 var mail = {
     init : function () {
         var _this = this;
-        $('#btn-send-email').on('click', function () {
+        $('#btn-send-mail').on('click', function () {
             _this.send();
         });
     },

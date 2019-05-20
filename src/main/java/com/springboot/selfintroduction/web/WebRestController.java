@@ -34,11 +34,12 @@ public class WebRestController {
     }
 
     @PostMapping("/email")
-    public void sendMail(@RequestBody MailSendDto dto){
+    public int sendMail(@RequestBody MailSendDto dto){
         try {
-            maileService.sendSimpleMessage(dto);
+            return maileService.sendSimpleMessage(dto);
         }catch (MailException mailException){
-            System.out.println(mailException);
+            System.out.println("WebRestController error :" + mailException);
+            return 0;
         }
     }
 }

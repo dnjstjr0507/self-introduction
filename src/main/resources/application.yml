@@ -1,8 +1,8 @@
 spring:
   profiles:
-    active: local # �⺻ ȯ�� ����
+    active: local
 
-# local ȯ��
+# local
 ---
 spring:
   profiles: local
@@ -14,9 +14,9 @@ spring:
     console:
       enabled: true
   mail:
-    host: smtp.gmail.com
-    username: dnjstjr0507@gmail.com
-    password: dudnfdld93
+    host: smtp.gmail.com #smtp.naver.com 는 error 발생
+    username: namanbangdev@gmail.com
+    password: devtest1234 #yml을 사용할 경우 비밀번호에 특수문자가 들어가면 따옴표로 감싸 주어야 하고 properties에선 감싸주지 않아도 된다.
     port: 587
     properties:
       mail:
