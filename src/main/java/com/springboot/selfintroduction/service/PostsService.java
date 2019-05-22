@@ -1,5 +1,6 @@
 package com.springboot.selfintroduction.service;
 
+import com.springboot.selfintroduction.domain.posts.Posts;
 import com.springboot.selfintroduction.domain.posts.PostsRepository;
 import com.springboot.selfintroduction.dto.posts.PostsMainResponseDto;
 import com.springboot.selfintroduction.dto.posts.PostsSaveRequestDto;
@@ -31,4 +32,5 @@ public class PostsService {
                 .map(PostsMainResponseDto::new)
                 .collect(Collectors.toList());
     }
+
 }

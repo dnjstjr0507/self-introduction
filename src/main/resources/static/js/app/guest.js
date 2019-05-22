@@ -15,6 +15,7 @@ var guest = {
         var data = {
             title: $('#title').val(),
             author: $('#author').val(),
+            password: $('#password').val(),
             content: $('#content').val()
         };
 

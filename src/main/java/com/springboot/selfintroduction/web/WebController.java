@@ -21,6 +21,7 @@ public class WebController {
     public String main(){
         return "index";
     }
+
     @GetMapping("/guest")
     public String guest(Model model) {
         model.addAttribute("posts", postsService.findAllDesc());
