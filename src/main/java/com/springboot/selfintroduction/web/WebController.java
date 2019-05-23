@@ -30,6 +30,8 @@ public class WebController {
         return "guest";
     }
 
+    /*
+    // 게시글 1개 가져오기 추후 업데이트 예정
     @GetMapping("/post")
     public String test(Long id, String password, Model model){
         PostsMainResponseDto post = postsService.findById(id,password);
@@ -37,9 +39,8 @@ public class WebController {
             model.addAttribute("post", post );
             return "guest";
         }else{
-            return "";
+            return ""; // 수정예정
         }
-
-    }
+    }*/
 
 }

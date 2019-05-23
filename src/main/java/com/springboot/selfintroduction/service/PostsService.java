@@ -35,8 +35,8 @@ public class PostsService {
     }
 
     @Transactional(readOnly = true)
-    public PostsMainResponseDto findById(Long id, String password){
-        Posts posts = postsRepository.findByid(1L);
+    public PostsMainResponseDto findById(Long id){
+        Posts posts = postsRepository.findByid(id);
         PostsMainResponseDto post = new PostsMainResponseDto(posts);
         return post;
 
