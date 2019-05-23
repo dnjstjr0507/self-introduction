@@ -1,7 +1,9 @@
 package com.springboot.selfintroduction.domain.posts;
 
+import com.springboot.selfintroduction.dto.posts.PostsMainResponseDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.util.stream.Stream;
 
@@ -18,5 +20,5 @@ public interface PostsRepository extends JpaRepository<Posts, Long> {
             "ORDER BY p.id DESC")
     Stream<Posts> findAllDesc();
 
-    
+    Posts findByid(@Param("id")Long id);
 }

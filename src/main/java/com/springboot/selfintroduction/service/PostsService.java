@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
@@ -31,6 +32,14 @@ public class PostsService {
         return postsRepository.findAllDesc()
                 .map(PostsMainResponseDto::new)
                 .collect(Collectors.toList());
+    }
+
+    @Transactional(readOnly = true)
+    public PostsMainResponseDto findById(Long id, String password){
+        Posts posts = postsRepository.findByid(1L);
+        PostsMainResponseDto post = new PostsMainResponseDto(posts);
+        return post;
+
     }
 
 }

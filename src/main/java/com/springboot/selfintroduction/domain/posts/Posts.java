@@ -1,6 +1,7 @@
 package com.springboot.selfintroduction.domain.posts;
 
 import com.springboot.selfintroduction.domain.BaseTimeEntity;
+import com.springboot.selfintroduction.dto.posts.PostsMainResponseDto;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -43,4 +44,5 @@ public class Posts extends BaseTimeEntity {
         this.password = password;
         this.author = author;
     }
+
 }

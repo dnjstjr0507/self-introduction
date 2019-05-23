@@ -2,6 +2,7 @@ package com.springboot.selfintroduction.domain;
 
 import com.springboot.selfintroduction.domain.posts.Posts;
 import com.springboot.selfintroduction.domain.posts.PostsRepository;
+import com.springboot.selfintroduction.dto.posts.PostsMainResponseDto;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -49,6 +50,26 @@ public class PostsRepositoryTest {
         assertThat(posts.getTitle(), is("테스트 게시글"));
         assertThat(posts.getContent(), is("테스트 본문"));
     }
+
+    @Test
+    public void 게시글한개_불러오기(){
+        postsRepository.save(Posts.builder()
+                .title("테스트 게시글")
+                .content("테스트 본문")
+                .password("테스트")
+                .author("test@gmail.com")
+                .build());
+
+        Posts posts = postsRepository.findByid(1L);
+        PostsMainResponseDto post = new PostsMainResponseDto(posts);
+
+        assertThat(post.getId(), is(1L));
+        assertThat(post.getTitle(), is("테스트 게시글"));
+        assertThat(post.getContent(), is("테스트 본문"));
+        assertThat(post.getPassword(), is("테스트"));
+        assertThat(post.getAuthor(), is("test@gmail.com"));
+    }
+
     @Test
     public void BaseTimeEntity_등록 () {
         //given

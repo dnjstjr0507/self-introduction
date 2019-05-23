@@ -32,7 +32,18 @@ var guest = {
             alert(error);
         });
     }
-
+    
 };
 
+var post = {
+    get : function (id, password) {
+        $.ajax({
+            type: 'GET',
+            url: '/post',
+            dataType: 'json',
+            contentType:'application/json; charset=utf-8',
+            data: JSON.stringify(data)
+        });
+    }
+}
 guest.init();

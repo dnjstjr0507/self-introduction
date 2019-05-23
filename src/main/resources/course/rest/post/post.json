@@ -1,5 +1,6 @@
 {
   "title":"Test Title",
   "content":"Test Content",
+  "password": "1234",
   "author":"test@gmail.com"
 }
