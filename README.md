@@ -1,10 +1,8 @@
 SpringBoot + JPA + Handlebars.js + Gradle<br>
 <br>
 <br>
-2019.05.06<br>
-    -> 프로젝트 생성 <br>
-<br>
-2019.05.07 게시글 저장 및 게시판 불러오기 완성<br>
+2019.05.18 <br>
+    -> 프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성<br>
     -> ※ 참고 및 출처 : jojoldu님 tistory  https://jojoldu.tistory.com/250?category=635883<br>
  <br> 
   ~ 2019.05.08<br>
