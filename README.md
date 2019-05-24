@@ -1,5 +1,7 @@
 SpringBoot + JPA + Handlebars.js + Gradle<br>
 <br>
+[Record]
+<br>
 <br>
 2019.05.18 <br>
     -> 프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성<br>
