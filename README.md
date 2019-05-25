@@ -1,7 +1,14 @@
-SpringBoot + JPA + Handlebars.js + Gradle<br>
-<br>
-<br>
-<h2>[Record]</h2>
+<h1>About</h1>
+<h2>Prerequisites</h2>
+<ul>
+ <li>IDE : IntelliJ IDEA Ultimate</li>
+ <li>Git Tools : Source Tree</li>
+ <li>OS : Mac OS X</li>
+ <li>SpringBoot 1.5.9</li>
+ <li>Java8</li>
+ <li>Gradle</li>
+</ul>
+<h2>Record</h2>
 <br>
 2019.05.18 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;-> 프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성<br>
