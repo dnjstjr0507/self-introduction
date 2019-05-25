@@ -12,17 +12,20 @@
 
 <h2>Record</h2>
 <ul>
-  <li>2019.05.18</li>
- <ol>
-  <li>프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성</li>
-  <li>※ 참고 및 출처 : jojoldu님 tistory  https://jojoldu.tistory.com/250?category=635883</li>
- </ol> 
+ <li>2019.05.18</li>
+  -> 프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성
+  ->※ 참고 및 출처 : jojoldu님 tistory  https://jojoldu.tistory.com/250?category=635883
+ <li>2019.05.19</li>
+  ※ 목표 : SPA Template선택 및 개발 설계<br>
+  -> ※ 출처 : https://html5up.net/dimension
+ <li>2019.05.20</li>
+ <li>2019.05.21</li>
+ <li>2019.05.22</li>
+ <li>2019.05.23</li>
+ 
 </ul>
 
-2019.05.18
-&nbsp;&nbsp;&nbsp;&nbsp;-> 프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-> ※ 참고 및 출처 : jojoldu님 tistory  https://jojoldu.tistory.com/250?category=635883<br>
- <br> 
+
 &nbsp;&nbsp;~ 2019.05.19<br>
 <br>
 2019.05.19 template적용 <br>
