@@ -1,5 +1,6 @@
-<h1>About</h1>
-<h2>Prerequisites</h2>
+<h1>SpringBoot로 자기소개 홈페이지 개발</h1>
+
+<h2>개발환경</h2>
 <ul>
  <li>IDE : IntelliJ IDEA Ultimate</li>
  <li>Git Tools : Source Tree</li>
@@ -8,9 +9,17 @@
  <li>Java8</li>
  <li>Gradle</li>
 </ul>
+
 <h2>Record</h2>
-<br>
-2019.05.18 <br>
+<ul>
+  <li>2019.05.18</li>
+ <ol>
+  <li>프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성</li>
+  <li>※ 참고 및 출처 : jojoldu님 tistory  https://jojoldu.tistory.com/250?category=635883</li>
+ </ol> 
+</ul>
+
+2019.05.18
 &nbsp;&nbsp;&nbsp;&nbsp;-> 프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성<br>
 &nbsp;&nbsp;&nbsp;&nbsp;-> ※ 참고 및 출처 : jojoldu님 tistory  https://jojoldu.tistory.com/250?category=635883<br>
  <br> 
