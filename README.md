@@ -12,7 +12,7 @@
 
 <h2>Record</h2>
 <ul>
- <li>2019.05.18</li>
+ <li>2019.05.6</li>
   -> 프로젝트 생성, 게시글 저장 및 게시판 불러오기 완성<br>
   ->※ 참고 및 출처 : jojoldu님 tistory  https://jojoldu.tistory.com/250?category=635883<br>
  <li>2019.05.19</li>
