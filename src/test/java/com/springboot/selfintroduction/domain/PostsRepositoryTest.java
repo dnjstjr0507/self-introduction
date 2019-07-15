@@ -8,7 +8,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.repository.query.Param;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDateTime;
@@ -52,8 +51,6 @@ public class PostsRepositoryTest {
         assertThat(posts.getContent(), is("테스트 본문"));
     }
 
-<<<<<<< HEAD
-=======
     @Test
     public void 게시글한개_불러오기(){
         postsRepository.save(Posts.builder()
@@ -72,7 +69,7 @@ public class PostsRepositoryTest {
         assertThat(post.getPassword(), is("테스트"));
         assertThat(post.getAuthor(), is("test@gmail.com"));
     }
->>>>>>> a32517bbd45a0ef70f7bbe8b0adb51bd0e5393ba
+
 
     @Test
     public void BaseTimeEntity_등록 () {

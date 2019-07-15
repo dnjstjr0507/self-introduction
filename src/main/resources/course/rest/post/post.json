@@ -1,10 +1,6 @@
 {
   "title":"Test Title",
   "content":"Test Content",
-<<<<<<< HEAD
-  "password":"test",
-=======
   "password": "1234",
->>>>>>> a32517bbd45a0ef70f7bbe8b0adb51bd0e5393ba
   "author":"test@gmail.com"
 }
