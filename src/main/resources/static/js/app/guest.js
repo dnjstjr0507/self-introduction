@@ -32,7 +32,7 @@ var guest = {
             alert(error);
         });
     }
-
+    
 };
 
 guest.init();

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
@@ -31,4 +32,16 @@ public class PostsService {
                 .map(PostsMainResponseDto::new)
                 .collect(Collectors.toList());
     }
+<<<<<<< HEAD
+=======
+
+    @Transactional(readOnly = true)
+    public PostsMainResponseDto findById(Long id){
+        Posts posts = postsRepository.findByid(id);
+        PostsMainResponseDto post = new PostsMainResponseDto(posts);
+        return post;
+
+    }
+
+>>>>>>> a32517bbd45a0ef70f7bbe8b0adb51bd0e5393ba
 }

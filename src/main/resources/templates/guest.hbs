@@ -30,26 +30,29 @@
                                 <thead>
                                 <tr>
                                     <th>게시글번호</th>
-                                    <th>제목</th>
+                                    {{!--<th>제목</th>--}}
+                                    <th>내용</th>
                                     <th>작성자</th>
                                     <th>최종수정일</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                    {{#each posts}}
+                                        <tr>
+                                            <td>{{id}}</td>
+                                            {{!--<td>{{title}}}</td>--}}
+                                            <td>{{content}}</a></td>
+                                            <td>{{author}}</td>
+                                            <td>{{modifiedDate}}</td>
+                                        </tr>
+                                    {{/each}}
                                     <tr>
                                         <td>0</td>
-                                        <td>테스트 제목</td>
+                                        {{!--<td>제목</td>--}}
+                                        <td>테스트 내용 입니다.</td>
                                         <td>관리자</td>
-                                        <td>2019.05.21</td>
+                                        <td>2019-05-21 05:23:16</td>
                                     </tr>
-                                {{#each posts}}
-                                    <tr>
-                                        <td>{{id}}</td>
-                                        <td>{{title}}</td>
-                                        <td>{{author}}</td>
-                                        <td>{{modifiedDate}}</td>
-                                    </tr>
-                                {{/each}}
                                 </tbody>
                             </table>
                         </div>
@@ -88,7 +91,7 @@
                 </section>
             </article>
         </div>
-    </div>
+    </div>{{!-- div main end--}}
 
     <!-- BG -->
     <div id="bg"></div>

@@ -52,6 +52,27 @@ public class PostsRepositoryTest {
         assertThat(posts.getContent(), is("테스트 본문"));
     }
 
+<<<<<<< HEAD
+=======
+    @Test
+    public void 게시글한개_불러오기(){
+        postsRepository.save(Posts.builder()
+                .title("테스트 게시글")
+                .content("테스트 본문")
+                .password("테스트")
+                .author("test@gmail.com")
+                .build());
+
+        Posts posts = postsRepository.findByid(1L);
+        PostsMainResponseDto post = new PostsMainResponseDto(posts);
+
+        assertThat(post.getId(), is(1L));
+        assertThat(post.getTitle(), is("테스트 게시글"));
+        assertThat(post.getContent(), is("테스트 본문"));
+        assertThat(post.getPassword(), is("테스트"));
+        assertThat(post.getAuthor(), is("test@gmail.com"));
+    }
+>>>>>>> a32517bbd45a0ef70f7bbe8b0adb51bd0e5393ba
 
     @Test
     public void BaseTimeEntity_등록 () {
