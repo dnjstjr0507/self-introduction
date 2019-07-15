@@ -27,4 +27,6 @@ public class WebController {
         model.addAttribute("posts", postsService.findAllDesc());
         return "guest";
     }
+
+
 }

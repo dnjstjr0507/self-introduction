@@ -2,11 +2,13 @@ package com.springboot.selfintroduction.domain;
 
 import com.springboot.selfintroduction.domain.posts.Posts;
 import com.springboot.selfintroduction.domain.posts.PostsRepository;
+import com.springboot.selfintroduction.dto.posts.PostsMainResponseDto;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.repository.query.Param;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDateTime;
@@ -49,6 +51,8 @@ public class PostsRepositoryTest {
         assertThat(posts.getTitle(), is("테스트 게시글"));
         assertThat(posts.getContent(), is("테스트 본문"));
     }
+
+
     @Test
     public void BaseTimeEntity_등록 () {
         //given

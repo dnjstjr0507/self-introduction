@@ -24,6 +24,7 @@ var mail = {
         }).fail(function (error) {
             alert('메일 전송에 실패하였습니다.');
             alert(error);
+            location.reload();
         });
     }
 
