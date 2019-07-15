@@ -1,4 +1,4 @@
-<h1>SpringBoot로 자기소개 홈페이지 개발</h1>
+<h1>SpringBoot로 만든 자기소개 홈페이지</h1>
 
 <h2>개발환경</h2>
 <ul>
