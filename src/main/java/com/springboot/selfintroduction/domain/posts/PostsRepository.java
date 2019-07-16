@@ -21,10 +21,5 @@ public interface PostsRepository extends JpaRepository<Posts, Long> {
 
     Stream<Posts> findAllDesc();
 
-<<<<<<< HEAD
-
-
-=======
     Posts findByid(@Param("id")Long id);
->>>>>>> a32517bbd45a0ef70f7bbe8b0adb51bd0e5393ba
 }

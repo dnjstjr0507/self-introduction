@@ -1,5 +1,6 @@
 package com.springboot.selfintroduction.service;
 
+import com.springboot.selfintroduction.domain.posts.Posts;
 import com.springboot.selfintroduction.domain.posts.PostsRepository;
 import com.springboot.selfintroduction.dto.posts.PostsMainResponseDto;
 import com.springboot.selfintroduction.dto.posts.PostsSaveRequestDto;
@@ -32,8 +33,6 @@ public class PostsService {
                 .map(PostsMainResponseDto::new)
                 .collect(Collectors.toList());
     }
-<<<<<<< HEAD
-=======
 
     @Transactional(readOnly = true)
     public PostsMainResponseDto findById(Long id){
@@ -43,5 +42,4 @@ public class PostsService {
 
     }
 
->>>>>>> a32517bbd45a0ef70f7bbe8b0adb51bd0e5393ba
 }

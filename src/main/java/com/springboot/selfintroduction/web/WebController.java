@@ -30,8 +30,6 @@ public class WebController {
         return "guest";
     }
 
-<<<<<<< HEAD
-=======
     /*
     // 게시글 1개 가져오기 추후 업데이트 예정
     @GetMapping("/post")
@@ -44,6 +42,5 @@ public class WebController {
             return ""; // 수정예정
         }
     }*/
->>>>>>> a32517bbd45a0ef70f7bbe8b0adb51bd0e5393ba
 
 }
